@@ -1,34 +1,38 @@
 class Caja:
     
-    def __init__(self, libre, tiempoUso, tiempoLibre, cola):
-        self.libre = libre
+    def __init__(self, id=0, cola=0, tiempoUso=0, tiempoLibre=0, tiempoActual=0):
+        self.id = id
+        self.cola = cola
         self.tiempoUso = tiempoUso
         self.tiempoLibre = tiempoLibre
-        self.cola = cola
-    
-    def __init__(self):
-        pass  # Esto indica que el constructor no hace nada específico
+        self.tiempoActual = tiempoActual
+        
+    def setTiempoActual(self, tiempoActual):
+        self.tiempoActual = tiempoActual
 
-    def set_libre(self, libre):
-        self.libre = libre 
+    def getTiempoActual(self):
+        return self.tiempoActual
 
-    def get_libre(self):
-        return self.libre
-    
-    def set_tiempoUso(self, tiempoUso):
+    def setTiempoUso(self, tiempoUso):
         self.tiempoUso = tiempoUso 
 
-    def get_tiempoUso(self):
+    def getTiempoUso(self):
         return self.tiempoUso
     
-    def set_tiempoLibre(self, tiempoLibre):
+    def setTiempoLibre(self, tiempoLibre):
         self.tiempoLibre = tiempoLibre 
 
-    def get_tiempoLibre(self):
+    def getTiempoLibre(self):
         return self.tiempoLibre
     
-    def set_cola(self, cola):
+    def getCola(self):
+        return self.cola
+    
+    def setCola(self, cola):
         self.cola = cola
 
-    def get_cola(self):
-        return self.cola
+    def getId(self):
+        return self.id 
+
+    def setId(self, id):
+        self.id = id

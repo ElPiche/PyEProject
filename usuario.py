@@ -9,27 +9,27 @@ class User:
     def __init__(self):
         pass  # Esto indica que el constructor no hace nada específico
     
-    def set_tiempoEspera(self, tiempoEspera):
+    def setTiempoEspera(self, tiempoEspera):
         self.tiempoEspera = tiempoEspera
 
-    def get_tiempoEspera(self):
+    def getTiempoEspera(self):
         return self.tiempoEspera
     
-    def set_Productos(self, productos):
+    def setProductos(self, productos):
         self.productos = productos
 
-    def get_Productos(self):
+    def getProductos(self):
         return self.productos
     
-    def set_tiempoLlegada(self, tiempoLlegada):
+    def setTiempoLlegada(self, tiempoLlegada):
         self.tiempoLlegada = tiempoLlegada
 
-    def get_tiempoLlegada(self):
+    def getTiempoLlegada(self):
         return self.tiempoLlegada
     
-    def set_tiempoCaja(self, tiempoCaja):
+    def setTiempoCaja(self, tiempoCaja):
         self.tiempoCaja = tiempoCaja
 
-    def get_tiempoCaja(self):
+    def getTiempoCaja(self):
         return self.tiempoCaja
 
